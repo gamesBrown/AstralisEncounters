@@ -1,0 +1,214 @@
+NPC(s)-  
+
+Another Contact (If a player’s submission gets used as an NPC, they get XP) 
+
+NPC’s Location Easy 
+
+NPC’s Name Easy 
+
+NPC’s Name and Location - Moderate 
+
+Item Pools 
+
+Randomized Item from x Tier  
+
+Tier 1 Easy 
+
+Tier 2 Fairly Easy 
+
+Tier 3 Moderate 
+
+Tier 4 Slightly Difficult 
+
+Tier 5 Difficult 
+
+Tier 6 Very Difficult 
+
+Tier 7 Nearly Impossible 
+
+Tier 8 Impossible 
+
+Unique Items 
+
+Information 
+
+Map Location 
+
+Creature Hint (Fake, Real) 
+
+Actual Creature Location (Fake, Real)  
+
+Gossip 
+
+Like(s) 
+
+Dislike(s) 
+
+Additional Point of Interest  
+
+Fake point of Interest 
+
+New Lead 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ tier
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Players meet with the Registrar. 
+
+ 
+
+Location: 
+
+Chance to generate her location and a name 
+
+Chance to generate her name only 
+
+Only one of these can be true. 
+
+ 
+
+If Location is generated 
+
+Players CAN just go to her.  
+
+FindRandomNpc() 
+
+NPC Cards feature tendencies, traits, and a description of the NPC. 
+
+The ARA can flavor as the NPC explaining, or just reveal what’s on the card for less interested players. 
+
+ 
+
+npcHasLocation = true 
+
+generate npclocation() 
+
+ 
+
+I believe she’s at the The Brew Stew & Chew, her Food Stand in the Elacian Town Square! 
+
+ 
+
+npcHasLocation = false 
+
+GenerateLead(npcLocation, tierLevel) 
+
+//GenerateWorldEncounter() 
+
+//GenerateSocialEncounter() 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Rylea NPC Card (Picture)
+Name: Rylea
+
+Appearance: Female Kitkin
+
+Likes Empathy
+30% Chance of Getting Empathy Prompt
+
+Likes Fitness 
+30% Chance of Getting a Fitness Prompt
+
+Loves Food 
+5% Chance of giving a Food Trivia prompt.
+
+Relationship Score: (stored on the player's side)
+
+Disposition: Friendly 
+
+Voice: High Pitched
+
+Quirk: She often gets you to try her poor tasting food. 
+
+
+GenerateNpcCard() 
+
+Amount of Skill Challenges(1-2)
+
+skillChallenges = GenerateSkillChallengeAmount(
+    {
+        randint min - max 2
+        }
+)
+
+
+
+for skillChallenge in range(skillChallenges):
+    generateSocialPrompt(Rylea.Preference[randint(min 0 max range.Rylea.Preference)])
+
+ generateSocialPrompt(Rylea.Preference[0],tierLevel):
+ {
+     //Rylea.Preference[0] = "Empathy"
+
+     if Rylea.Preference.likesEmpathy == true
+        result = randint(1, 100)
+            if result > 30 
+                return result
+    else pass
+     
+
+
+ }
+
+
+Location:  
+
+npcLocation = getNPCLocation(Rylea) 
+
+npcLocation( 
+
+For each location in Rylea.Locations 
+
+) 
+
+ 
+
+If npcLocation == “Chew, Stew and Brew.” 
+
+Print(Location.id 
+
+
+Meeting Prompt 
+
+5 Senses 
+
+
+Hello, Travellers! You look like a group of hunters so..I assume you saw my hunt listing! 
+
+ 

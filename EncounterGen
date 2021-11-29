@@ -1,0 +1,175 @@
+NPC(s)-  
+
+Another Contact (If a player’s submission gets used as an NPC, they get XP) 
+
+NPC’s Location Easy 
+
+NPC’s Name Easy 
+
+NPC’s Name and Location - Moderate 
+
+Item Pools 
+
+Randomized Item from x Tier  
+
+Tier 1 Easy 
+
+Tier 2 Fairly Easy 
+
+Tier 3 Moderate 
+
+Tier 4 Slightly Difficult 
+
+Tier 5 Difficult 
+
+Tier 6 Very Difficult 
+
+Tier 7 Nearly Impossible 
+
+Tier 8 Impossible 
+
+Unique Items 
+
+Information 
+
+Map Location 
+
+Creature Hint (Fake, Real) 
+
+Actual Creature Location (Fake, Real)  
+
+Gossip 
+
+Like(s) 
+
+Dislike(s) 
+
+Additional Point of Interest  
+
+Fake point of Interest 
+
+New Lead 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Players meet with the Registrar. 
+
+ 
+
+Location: 
+
+Chance to generate her location and a name 
+
+Chance to generate her name only 
+
+Only one of these can be true. 
+
+ 
+
+If Location is generated 
+
+Players CAN just go to her.  
+
+FindRandomNpc() 
+
+GenerateNpcCard() 
+
+NPC Cards feature tendencies, traits, and a description of the NPC. 
+
+The ARA can flavor as the NPC explaining, or just reveal what’s on the card for less interested players. 
+
+ 
+
+npcHasLocation = true 
+
+generate npclocation() 
+
+ 
+
+I believe she’s at the The Brew Stew & Chew, her Food Stand in the Elacian Town Square! 
+
+ 
+
+npcHasLocation = false 
+
+GenerateLead(npcLocation) 
+
+GenerateWorldEncounter() 
+
+GenerateSocialEncounter() 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Rylea NPC Card 
+
+Likes Empathy (% chance) 
+
+Likes Fitness 
+
+Disposition Friendly 
+
+Quirk: She always gets you to try her poor tasting food. 
+
+Stew, Chew, Brew Is the name of her food stand. 
+
+ 
+
+Meeting Prompt 
+
+5 Senses 
+
+Location:  
+
+npcLocation = getNPCLocation(Rylea) 
+
+npcLocation( 
+
+For each location in Rylea.Locations 
+
+) 
+
+ 
+
+If npcLocation == “Chew, Stew and Brew.” 
+
+Print(Location.id 
+
+Hello, Travellers! You look like a group of hunters so..I assume you saw my hunt listing! 
+
+ 
