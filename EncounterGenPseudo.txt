@@ -159,7 +159,10 @@ Quirk: She often gets you to try her poor tasting food.
 
 GenerateNpcCard() 
 
-Amount of Skill Challenges(1-2)
+Randomize Amount of Skill Challenges(0-4)
+
+for cardQuirk in Rylea.Quirk{}
+    appendQuirk(NpcCard.Quirk[])
 
 skillChallenges = GenerateSkillChallengeAmount(
     {
@@ -169,7 +172,7 @@ skillChallenges = GenerateSkillChallengeAmount(
 
 
 
-for skillChallenge in range(skillChallenges):
+for skillChallenge in range(Rylea.skillChallenges[]):
     generateSocialPrompt(Rylea.Preference[randint(min 0 max range.Rylea.Preference)])
 
  generateSocialPrompt(Rylea.Preference[0],tierLevel):
@@ -178,13 +181,16 @@ for skillChallenge in range(skillChallenges):
 
      if Rylea.Preference.likesEmpathy == true
         result = randint(1, 100)
-            if result > 30 
                 return result
-    else pass
-     
+#case statement? generates prompt if the result is 30 or lower
+    if result >=30
+
+    if result <= 30
+    print Rylea.Prompt.Tier1[randint(1, (range.Rylea.Prompt.Tier1))]
 
 
  }
+
 
 
 Location:  
@@ -192,21 +198,18 @@ Location:
 npcLocation = getNPCLocation(Rylea) 
 
 npcLocation( 
-
-For each location in Rylea.Locations 
+    generateLocation(Rylea.Location[randint(min 0 max range.Rylea.Location)])
 
 ) 
 
  
-
+//Prints an Introduction based on the NPC's Current location
 If npcLocation == “Chew, Stew and Brew.” 
+NpcCard.Introduction = Rylea.Location.Introduction[(randint (0, (range.Rylea.Location.Introduction)))]
+print NpcCard.Introduction
 
-Print(Location.id 
 
-
-Meeting Prompt 
-
-5 Senses 
+So Introductions are based on the Prompt
 
 
 Hello, Travellers! You look like a group of hunters so..I assume you saw my hunt listing! 
