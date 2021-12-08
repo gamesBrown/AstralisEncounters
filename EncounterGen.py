@@ -2,7 +2,16 @@ import random
 
 class EncounterCard:
     def __init__(self):
-        self.userInput = ""
+        self.tier = ""
+        self.prompt = ""
+        self.worldLocation = ""
+        self.mapLocation = ""
+
+class pointOfInterest:
+    def __init__(self):
+        self.mapLocation =""
+        self.prompt =""
+        self.skillChallenge = ""
     
 class npcCard:
     def __init__(self):
@@ -24,4 +33,3 @@ ryleaCard = npcCard()
 
  #   print(trait)
 print(ryleaCard.goodPref[(random.randint(1, 2)-1)])
-print 
